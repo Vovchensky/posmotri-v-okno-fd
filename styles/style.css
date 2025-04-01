@@ -68,7 +68,7 @@ ol {
 .content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
+  align-items: end;
   gap: 30px;
   max-width: 1140px;
 }
@@ -81,7 +81,7 @@ ol {
 
 .content__list-container {
   position: relative;
-  max-height: 360px;
+  max-height: 320px;
   overflow-y: auto;
 }
 
@@ -95,6 +95,7 @@ ol {
 .result__video-container {
   position: relative;
   width: 711px;
+  /* Высота не указана, чтоб была схожесть с макетом */
   margin-bottom: 16px;
 }
 
@@ -102,6 +103,7 @@ ol {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  object-position: center;
 }
 
 .content__list {
@@ -111,7 +113,6 @@ ol {
 
 .content__video-card {
   display: flex;
-  align-items: center;
 }
 
 .content__video-card-thumbnail {
@@ -132,9 +133,10 @@ ol {
 
 .title {
   color: white;
+  font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 75px;
-  line-height: 4rem;
+  line-height: 4.4rem;
   text-transform: uppercase;
 }
 
@@ -151,6 +153,7 @@ ol {
   width: 190px;
   overflow: hidden;
   color: white;
+  font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 30px;
   text-transform: uppercase;
@@ -192,12 +195,13 @@ fieldset {
 }
 
 .search-form__textfield {
-  width: 245px;
+  width: 225px;
   border: none;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   padding: 2.5px;
   color: white;
+  font-family: inherit;
   font-size: 18px;
   background-color: transparent;
   appearance: none;
@@ -244,7 +248,9 @@ fieldset {
 .button {
   border: 1px solid white;
   color: white;
+  font-family: inherit;
   font-weight: bold;
+  font-size: 18px;
   background: transparent;
   cursor: pointer;
 }
@@ -272,12 +278,11 @@ fieldset {
   display: block;
 }
 
-.content__card-link:hover .content__video-card-description-container {
+.content__card-link:hover {
   text-decoration: underline;
-  text-underline-offset: 2px;
 }
 
-.content__card-link:focus {
+.content__card-link:focus-visible {
   outline: 1px solid white;
 }
 
