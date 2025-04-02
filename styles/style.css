@@ -76,12 +76,12 @@ ol {
 .search-form {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: center;
 }
 
 .content__list-container {
   position: relative;
-  max-height: 320px;
+  max-height: 300px;
   overflow-y: auto;
 }
 
@@ -89,13 +89,13 @@ ol {
   display: grid;
   gap: 26px;
   width: 100%;
-  height: 100%;
+  height: 534px;
 }
 
 .result__video-container {
   position: relative;
   width: 711px;
-  /* Высота не указана, чтоб была схожесть с макетом */
+  height: 386px;
   margin-bottom: 16px;
 }
 
@@ -113,12 +113,15 @@ ol {
 
 .content__video-card {
   display: flex;
+  width: 194px;
+  height: 103px;
 }
 
 .content__video-card-thumbnail {
-  width: 194px;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
-  object-fit: center;
+  object-position: center;
 }
 
 .content__video-card-description-container {
@@ -265,6 +268,7 @@ fieldset {
 }
 
 .search-form__submit-button {
+  align-self: end;
   padding: 6px 73.5px;
 }
 
@@ -276,6 +280,10 @@ fieldset {
 
 .content__card-link {
   display: block;
+}
+
+.content__card-link:active { 
+  background-color: #545050;
 }
 
 .content__card-link:hover {
