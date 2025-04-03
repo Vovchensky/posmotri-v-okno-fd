@@ -113,14 +113,12 @@ ol {
 
 .content__video-card {
   display: flex;
-  width: 194px;
-  height: 103px;
 }
 
 .content__video-card-thumbnail {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+  width: 194px;
+  height: 103px;
+  object-fit: cover;
   object-position: center;
 }
 
