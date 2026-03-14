@@ -2,7 +2,11 @@
 
 Интерактивное приложение для поиска и просмотра видео. Стилизация готового работающего приложения — вёрстка лейаута, кастомных элементов форм, состояний интерактивных элементов и позиционирование прелоадеров.
 
-[![Скриншот проекта](./images/screenshot.png)](https://vovchensky.github.io/posmotri-v-okno-fd/)
+<p align="center">
+  <a href="https://vovchensky.github.io/posmotri-v-okno-fd/">
+    <img src="./images/screenshot.png" alt="Скриншот проекта">
+  </a>
+</p>
 
 ## Демо
 
